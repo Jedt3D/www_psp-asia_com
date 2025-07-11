@@ -10,3 +10,10 @@ get '/' do
   erb :index
 end
 
+get '/product' do
+  erb :product_main
+end
+
+get '/news' do
+  erb :news_main
+end
