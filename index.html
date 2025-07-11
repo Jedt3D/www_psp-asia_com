@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="dist/output.css" rel="stylesheet">
+
+    <title>Main Page</title>
+    <style>
+        /* Mobile menu styling */
+        #mobile-menu {
+            z-index: 1000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        #menu-overlay {
+            z-index: 999;
+        }
+
+        /* When menu is open */
+        #mobile-menu.menu-open {
+            transform: translateX(0);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Prevent body scrolling when menu is open */
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        /* Make sure menu button and close button align perfectly */
+        #menu-toggle, #close-menu {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover effect for menu items */
+        #mobile-menu ul li a:hover {
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFSBQ0X4L0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-GFSBQ0X4L0');
+</script>
+
+<body>
+<header class="h-screen flex flex-col bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./img/bg-head-index.png');">
+    <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
+
+        <div id="company-identity" class="col-2">
+            <a href="./index.html" class="flex flex-row items-center gap-4 h-full">
+                <img src="./img/psp-logo.png" alt="PSP Logo">
+                <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
+            </a>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="col-8 justify-center text-nowrap hidden lg:flex h-full">
+            <li id="home" class="h-full">
+                <a href="./index.html"
+                   class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
+            </li>
+            <a href="./product_main.html"
+               class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Product</a>
+            </li>
+            <li id="news" class="h-full">
+                <a href="./news-main.html"
+                   class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Our
+                    Business News</a>
+            </li>
+            <li id="contact" class="h-full">
+                <a href="#contact-us"
+                   class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Mobile menu - full-screen, positioned outside the viewport initially -->
+        <div id="mobile-menu"
+             class="fixed top-0 left-0 w-full h-screen bg-white z-[1000] transform translate-x-full transition-transform duration-300 ease-in-out">
+            <!-- Top navigation bar with close button exactly aligned with the menu button -->
+            <div class="rack justify-between h-16 border-b border-gray-100">
+                <div class="col-2">
+                    <a href="./index.html" class="flex flex-row items-center gap-4 h-full">
+                        <img src="./img/psp-logo.png" alt="PSP Logo">
+                    </a>
+                </div>
+                <!--                    jane try-->
+                <div class="col-2 flex items-center justify-end h-full pr-0">
+                    <button id="close-menu" class="hamburger-fixed focus:outline-none" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Menu content -->
+            <div class="rack pt-12">
+                <div class="col-10 offset-1">
+                    <ul class="flex flex-col w-full text-lg">
+                        <li class="border-b py-4">
+                            <a href="./index.html" class="block hover:bg-gray-50 py-2">Home</a>
+                        </li>
+                        <li class="border-b py-4">
+                            <a href="./product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
+                        </li>
+                        <li class="border-b py-4">
+                            <a href="./news-main.html" class="block hover:bg-gray-50 py-2">Our Business News</a>
+                        </li>
+                        <li class="border-b py-4">
+                            <a href="#contact-us" class="block hover:bg-gray-50 py-2">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="mt-12">
+                        <button class="btn-primary w-full py-3 text-lg">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Removed overlay as we're using a full-screen menu without a semi-transparent overlay -->
+
+        <div class="col-2 flex items-center justify-end gap-5">
+            <!-- Language selector (commented out as requested)
+            <div class="relative group language-selector h-full">
+                <button class="flex flex-row items-center gap-2">
+                    <span>EN</span><img src="./img/chevron-down.svg" alt="arrow-down" class="w-4 h-4">
+                </button>
+                <div class="absolute right-0 w-24 shadow-lg rounded-b-md overflow-hidden z-20">
+                    <a href="#" class="language-option block px-4 py-3 text-gray-800">TH</a>
+                    <a href="#" class="language-option block px-4 py-3 text-gray-800">JP</a>
+                </div>
+            </div>
+            -->
+
+
+            <a href="#contact-us" class="btn-primary hidden lg:flex text-nowrap">Contact Sales</a>
+            <!--                jane try-->
+            <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer"
+                    aria-label="Open menu" type="button">
+                <img src="./img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+            </button>
+        </div>
+    </nav>
+
+
+    <div id="first-fold" class="rack flex-1 items-center">
+        <div class="col-7 offset-5 text-white">
+            <p>PSP Asia Company Limited</p>
+            <h1> Medical data<br> for everyone. <br>And <span class="yellow-highlight">for the future.</span></h1>
+        </div>
+    </div>
+
+
+</header>
+
+<!--vision-->
+<div class="rack px-8 py-24">
+    <div class="col-6 offset-6">
+        <span class="s1-highlight">Our Vision and Missions</span>
+    </div>
+
+
+    <h2 class="col-6 offset-6">Sharing images with <span class="yellow-highlight">imagination</span></h2>
+    <div class="s1 col-6 offset-6">Providing information infrastructure and sharing limited healthcare resources
+        to help each member of society live a healthy life.
+    </div>
+
+    <div class="b1 col-6 offset-6">Implementing high-quality and convenient medical information services addresses the
+        social issues related to healthcare and supports each person's life.
+    </div>
+    <div class="col-6 offset-6">
+        <ul>
+            <li>Establishing new regional communications for medical personnel</li>
+
+            <li>Resolving the information asymmetry in medical services</li>
+
+            <li>Building an information infrastructure that enables everyone to contribute to the healthcare</li>
+
+            <li>Providing opportunities for consumers to use health services wisely</li>
+            <!--                    <div class="py-3">-->
+            <!--                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">All Products →</button>-->
+            <!--                    </div>-->
+        </ul>
+    </div>
+
+
+    <div class="col-6 offset-6">
+        <img src="./img/vision.png" alt="black computer with yellow cpu">
+    </div>
+</div>
+
+<!--map-->
+<div class="rack py-24 w-full bg-cover bg-center" style="background-image: url('./img/bg-map.png');">
+
+    <!--    1-->
+    <div class="col-3 offset-5 bg-white shadow-md rounded-lg flex flex-col self-start overflow-hidden">
+
+        <img src="./img/bangkok.png" alt="beautiful bangkok map" class="w-full">
+        <div class="py-5 px-4">
+            <h3>PSP ASIA CO., LTD.</h3>
+            <p>
+                20th Floor, UBC II Building<br>
+                591 Sukhumvit Road<br>
+                North Klongton, Wattana, Bangkok 10110, Thailand<br>
+
+                TAX ID: 0105562062312<br>
+                Email: info99@psp-asia.com<br>
+            </p>
+        </div>
+    </div>
+    <!--2-->
+    <div class="col-4 flex flex-col">
+        <h2 class="mb-3">Global Reach, Local Excellence</h2>
+        <div class="s1">
+            With our headquarters in Tokyo and regional base<br>
+            in Bangkok, we're strategically positioned to serve<br>
+            both the Asia-Pacific region and global markets.<br>
+            Our dual-city presence enables seamless<br>
+            operations and enhanced connectivity worldwide.<br>
+        </div>
+        <div class="block shadow-md mt-3 rounded-lg overflow-hidden border-14 border-white relative">
+            <!-- Google Maps iframe -->
+            <div class="w-full h-64 sm:h-72 md:h-80">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.2172967518129!2d100.56746600000001!3d13.732822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f02720476ff%3A0xf9b869ab785a06ee!2sUnited%20Business%20Centre%20II!5e0!3m2!1sen!2sus!4v1711530700000!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--partnership-->
+<div class="col-10 offset-2 flex flex-col items-center py-24">
+    <h2>Partnership</h2>
+    <div class="flex flex-row flex-wrap justify-center items-center w-full gap-16 my-12">
+        <img src="img/bjc.png" alt="bjc logo" class="h-18 w-auto max-w-full object-contain">
+        <img src="img/cmc.png" alt="cmc logo" class="h-18 w-auto max-w-fullobject-contain">
+        <img src="img/lpixel.png" alt="lpix logo" class="h-25 w-auto max-w-full object-contain">
+    </div>
+</div>
+
+<section id="contact-us" class="py-20 bg-gradient-to-b from-[#014198] via-[#80C7ED] to-[#8FD6F2] text-white">
+    <div class="rack">
+        <div class="col-8 offset-4 text-center mb-12">
+            <h2>Meet us in <span class="yellow-highlight">Bangkok</span></h2>
+            <p class="s1 mt-4">
+                Ready to elevate your healthcare capabilities? Meet our specialists at our Bangkok
+                headquarters to explore how our advanced imaging solutions can transform your
+                organization's future.
+            </p>
+        </div>
+
+        <div class="col-3 offset-5 h-[80%] bg-white rounded-lg shadow-lg p-8 text-blue-900">
+            <h3 class="mb-4">Find us</h3>
+            <p class="mb-6">We're here to help and answer any question you might have</p>
+
+            <div class="flex flex-col space-y-6">
+                <div>
+                    <p class="mb-1">Call us directly</p>
+                    <p>+662-666-4901</p>
+                </div>
+
+                <div>
+                    <p class="mb-1">Headquarters</p>
+                    <p><a href="https://maps.app.goo.gl/kcgpxSU752pW2qtQ6" target="_blank" class="underline">View on
+                        Google Maps</a></p>
+                </div>
+
+                <!--                <div>-->
+                <!--                    <p class="mb-1">Need live support?</p>-->
+                <!--                    <p>info@domain.com</p>-->
+                <!--                </div>-->
+            </div>
+        </div>
+
+        <div class="col-4 bg-white rounded-lg shadow-lg p-8 text-blue-900">
+            <h3 class="mb-4">Let us know</h3>
+            <form class="flex flex-col space-y-6">
+                <div>
+                    <label for="name" class="block mb-2">Enter your name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name as a contact person"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block mb-2">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block mb-2">Your message</label>
+                    <textarea name="message" id="message" rows="4"
+                              placeholder="Brief us about your project and what you wanted to see"
+                              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <div class="text-sm text-gray-500">
+                    We never collect your information without your explicit consent.
+                </div>
+                <button type="submit"
+                        class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors self-end">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="rack py-20">
+    <div class="col-2 offset-4">
+        <img src="img/psp-logo.png" alt="company logo" id="psp-logo">
+        <p class="b1">Medical data for everyone. <br>And for the future.</p>
+    </div>
+    <ul id="footer-link" class="col-6 text-right">
+      <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
+        <!--        <li><a href="./news-main.html">Our Business News</a></li>-->
+        <!--        <li><a href="#contact-us">Contact</a></li>-->
+        <!--        <li><a href="#">Support</a></li>-->
+    </ul>
+
+    <div class="col-8 offset-4 border-t border-b-black"></div>
+    <div id="copyright" class="col-4 offset-4">©️ 2025 PSP Asia Co., Ltd. All rights reserved.</div>
+    <div id="privacy-policy" class="col-4 flex justify-end">
+        <ul id="privacy-policy-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Copyright</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="highlight-animation.js"></script>
+<script>
+    // Simple mobile menu implementation
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM loaded, setting up mobile menu');
+
+        // Elements
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        if (!menuToggle || !mobileMenu || !closeMenu) {
+            console.error('Menu elements not found:', {
+                menuToggle: !!menuToggle,
+                mobileMenu: !!mobileMenu,
+                closeMenu: !!closeMenu
+            });
+            return;
+        }
+
+        console.log('Menu elements found successfully');
+
+        // Show menu
+        function showMenu() {
+            console.log('Opening menu');
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('menu-open');
+            document.body.classList.add('menu-open');
+
+            // hind hamburger button << Jane trys
+            menuToggle.style.display = 'none';
+        }
+
+        // Hide menu
+        function hideMenu() {
+            console.log('Closing menu');
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('menu-open');
+            document.body.classList.remove('menu-open');
+
+            // show hamburger button back << Jane trys
+            menuToggle.style.display = 'block';
+        }
+
+        // Toggle button event
+        menuToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            showMenu();
+            console.log('Menu toggle clicked');
+        });
+
+        // Close button event
+        closeMenu.addEventListener('click', function (e) {
+            e.preventDefault();
+            hideMenu();
+            console.log('Close button clicked');
+        });
+
+        // Close on menu item click
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', hideMenu);
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                hideMenu();
+            }
+        });
+
+        console.log('Mobile menu initialized successfully');
+    });
+</script>
+</body>
+</html>
