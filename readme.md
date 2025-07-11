@@ -3,7 +3,7 @@
 โปรเจคสำหรับ www.psp-asia.com เว็บหลัก
 
 - sinatra 4.1
-- ruby 3.2.8
+- ruby 3.1.6
 - tailwind css 4.1
 - postgresql 16
 
