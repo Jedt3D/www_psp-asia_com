@@ -5,7 +5,14 @@
 - sinatra 4.1
 - ruby 3.2.8
 - tailwind css 4.1
-- postgresql 16# PSPA Website - Rebased Workfiles
+- postgresql 16
+
+# Change log
+
+- 2025-07-11 นำ html static มาเริ่มต้นใหม่ใน repo นี้ ทดสอบรัน local web server ผ่านแล้ว
+
+
+# PSPA Website - Rebased Workfiles
 
 This branch contains the latest workfiles content migrated from the Tailwind CSS development environment. 
 
