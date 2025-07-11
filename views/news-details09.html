@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/dist/output.css" rel="stylesheet">
+
+  <title>#RSNA2021</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFSBQ0X4L0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GFSBQ0X4L0');
+</script>
+<body>
+
+<header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat" style="background-image: url('/img/client-head2.png');">
+  <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
+
+    <div id="company-identity" class="col-2">
+      <a href="/" class="flex flex-row items-center gap-4 h-full">
+        <img src="/img/psp-logo.png" alt="PSP Logo">
+        <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
+      </a>
+    </div>
+
+    <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
+      <li id="home" class="h-full">
+        <a href="/" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
+      </li>
+      <li id="product" class="h-full">
+        <a href="/product" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Product</a>
+      </li>
+      <li id="news" class="h-full">
+        <a href="/news" class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Our Business News</a>
+      </li>
+      <li id="contact" class="h-full">
+        <a href="/#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
+      </li>
+    </ul>
+    <!-- Mobile menu - full-screen, positioned outside the viewport initially -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-white z-[1000] transform translate-x-full transition-transform duration-300 ease-in-out">
+      <!-- Top navigation bar with close button exactly aligned with the menu button -->
+      <div class="rack justify-between h-16 border-b border-gray-100">
+        <div class="col-2">
+          <a href="/" class="flex flex-row items-center gap-4 h-full">
+            <img src="/img/psp-logo.png" alt="PSP Logo">
+          </a>
+        </div>
+        <!--                    jane try-->
+        <div class="col-2 flex items-center justify-end h-full pr-0">
+          <button id="close-menu" class="hamburger-fixed focus:outline-none" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu content -->
+      <div class="rack pt-12">
+        <div class="col-10 offset-1">
+          <ul class="flex flex-col w-full text-lg">
+            <li class="border-b py-4">
+              <a href="/" class="block hover:bg-gray-50 py-2">Home</a>
+            </li>
+            <li class="border-b py-4">
+              <a href="/product" class="block hover:bg-gray-50 py-2">Product</a>
+            </li>
+            <li class="border-b py-4">
+              <a href="/news" class="block hover:bg-gray-50 py-2">Our Business News</a>
+            </li>
+            <li class="border-b py-4">
+              <a href="#contact-us" class="block hover:bg-gray-50 py-2">Contact</a>
+            </li>
+          </ul>
+          <div class="mt-12">
+            <button class="btn-primary w-full py-3 text-lg">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Removed overlay as we're using a full-screen menu without a semi-transparent overlay -->
+
+    <div class="col-2 flex items-center justify-end gap-5">
+      <!-- Language selector (commented out as requested)
+      <div class="relative group language-selector h-full">
+          <button class="flex flex-row items-center gap-2">
+              <span>EN</span><img src="./img/chevron-down.svg" alt="arrow-down" class="w-4 h-4">
+          </button>
+          <div class="absolute right-0 w-24 shadow-lg rounded-b-md overflow-hidden z-20">
+              <a href="#" class="language-option block px-4 py-3 text-gray-800">TH</a>
+              <a href="#" class="language-option block px-4 py-3 text-gray-800">JP</a>
+          </div>
+      </div>
+      -->
+
+
+      <a href="#contact-us" class="btn-primary hidden lg:flex text-nowrap">Contact Sales</a>
+      <!--                jane try-->
+      <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer" aria-label="Open menu" type="button">
+        <img src="/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+      </button>
+    </div>
+  </nav>
+
+  <div id="first-fold" class="rack flex-1 items-center">
+    <div class="col-7 offset-5 text-center text-white">
+      <p class="col-5 offset-7 text-white rounded-2xl news-gradient-overlay">
+        PSP Asia Company Limited
+      </p>
+
+      <h1>Our Business News</h1>
+    </div>
+  </div>
+
+</header>
+
+<main class="rack">
+
+  <div class="col-6 offset-6 flex flex-col gap-8">
+    <h2>
+      <span class="yellow-highlight">#RSNA2021</span>
+      PSP Corporate, participated in the exhibition.
+    </h2>
+
+    <p class="s1">
+      ในส่วน ของ PSP Corporatee ได้เข้าร่วมนิทรรศการ
+      #RSNA2021   การประชุมและการประชุมทางวิทยาศาสตร์ประจำปีครั้งที่ 107
+
+    </p>
+    <img src="/img/news/20211128rsna.jpg" alt="rsna2021" class="w-full rounded-lg shadow-md">
+
+
+    <p>
+      วันที่: 28 พฤศจิกายน ถึง 2 ธันวาคม 2564   ที่ตั้ง: ชิคาโก, McCormick Place
+    </p>
+
+    <img src="/img/news/20211128rsna01.jpg" alt="rsna202101" class="w-full rounded-lg shadow-md">
+
+    <p>
+      ถ้าคุณมีคำถามหรือมีความสนใจอยากได้รับข้อข้อมูลเพิ่ม, กรุณาติดต่อ: <span class="yellow-highlight">info99@psp-asia.com</span>
+    </p>
+
+
+
+
+    <div class="flex justify-end mt-4">
+      <a href="/news" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800">
+        <span>Return to News List</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</main>
+
+<section id="contact-us" class="py-20 bg-gradient-to-b from-[#014198] via-[#80C7ED] to-[#8FD6F2] text-white">
+  <div class="rack">
+    <div class="col-8 offset-4 text-center mb-12">
+      <h2>Meet us in <span class="yellow-highlight">Bangkok</span></h2>
+      <p class="s1 mt-4">
+        Ready to elevate your healthcare capabilities? Meet our specialists at our Bangkok
+        headquarters to explore how our advanced imaging solutions can transform your
+        organization's future.
+      </p>
+    </div>
+
+    <div class="col-3 offset-5 h-[80%] bg-white rounded-lg shadow-lg p-8 text-blue-900">
+      <h3 class="mb-4">Find us</h3>
+      <p class="mb-6">We're here to help and answer any question you might have</p>
+
+      <div class="flex flex-col space-y-6">
+        <div>
+          <p class="mb-1">Call us directly</p>
+          <p>+662-666-4901</p>
+        </div>
+
+        <div>
+          <p class="mb-1">Headquarters</p>
+          <p><a href="https://maps.app.goo.gl/AmzuKNcB5qWJqdDr7" target="_blank" class="underline">View on Google Map</a></p>
+        </div>
+
+        <div>
+          <p class="mb-1">Need live support?</p>
+          <p>info@domain.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 bg-white rounded-lg shadow-lg p-8 text-blue-900">
+      <h3 class="mb-4">Let us know</h3>
+      <form class="flex flex-col space-y-6">
+        <div>
+          <label for="name" class="block mb-2">Enter your name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name as a contact person"
+                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block mb-2">Email address</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address"
+                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="message" class="block mb-2">Your message</label>
+          <textarea name="message" id="message" rows="4" placeholder="Brief us about your project and what you wanted to see"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <div class="text-sm text-gray-500">
+          We never collect your information without your explicit consent.
+        </div>
+        <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors self-end">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="rack py-20 mt-20">
+  <div id="company-identity" class="col-2 offset-4">
+    <a href="/">
+      <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
+      <p class="b1">Medical data for everyone. <br>And for the future.</p>
+    </a>
+  </div>
+  <ul id="footer-link" class="col-6 text-right">
+  <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
+    <!--        <li><a href=".//news">Our Business News</a></li>-->
+    <!--        <li><a href=".//#contact-us">Contact</a></li>-->
+    <!--        <li><a href="#">Support</a></li>-->
+  </ul>
+
+  <div class="col-8 offset-4 border-t border-b-black"></div>
+  <div id="copyright" class="col-4 offset-4">©️ 2025 PSP Asia Co., Ltd. All rights reserved.</div>
+  <div id="privacy-policy" class="col-4 flex justify-end">
+    <ul id="privacy-policy-list">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Copyright</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // =================================================================
+  // MOBILE MENU FUNCTIONALITY
+  // =================================================================
+  function initializeMobileMenu() {
+    console.log('Setting up mobile menu');
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    if (!menuToggle || !mobileMenu || !closeMenu) {
+      console.error('Menu elements not found:', {
+        menuToggle: !!menuToggle,
+        mobileMenu: !!mobileMenu,
+        closeMenu: !!closeMenu
+      });
+      return;
+    }
+
+    console.log('Menu elements found successfully');
+
+    function showMenu() {
+      console.log('Opening mobile menu');
+      mobileMenu.classList.remove('translate-x-full');
+      mobileMenu.classList.add('menu-open');
+      document.body.classList.add('menu-open');
+      menuToggle.classList.add('hidden'); // ใช้ Tailwind แทน display:none
+    }
+
+    function hideMenu() {
+      console.log('Closing mobile menu');
+      mobileMenu.classList.add('translate-x-full');
+      mobileMenu.classList.remove('menu-open');
+      document.body.classList.remove('menu-open');
+      menuToggle.classList.remove('hidden'); // ใช้ Tailwind แทน display:block
+    }
+
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      showMenu();
+      console.log('Menu toggle clicked');
+    });
+
+    closeMenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      hideMenu();
+      console.log('Close button clicked');
+    });
+
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', hideMenu);
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        hideMenu();
+      }
+    });
+
+    console.log('Mobile menu initialized successfully');
+  }
+
+  // =================================================================
+  // TAB SWITCHING FUNCTIONALITY
+  // =================================================================
+  function initializeTabs() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const contentPanels = document.querySelectorAll('#product-content > div');
+
+    if (contentPanels.length > 0) {
+      contentPanels[0].classList.add('active-panel');
+    }
+
+    function switchTab(targetId) {
+      contentPanels.forEach(panel => {
+        if (panel.classList.contains('active-panel')) {
+          panel.style.opacity = '0';
+          panel.style.transform = 'translateX(-20px)';
+          setTimeout(() => {
+            panel.classList.remove('active-panel');
+          }, 200);
+        }
+      });
+
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        setTimeout(() => {
+          targetPanel.style.transform = 'translateX(20px)';
+          targetPanel.style.opacity = '0';
+          targetPanel.classList.add('active-panel');
+
+          setTimeout(() => {
+            targetPanel.style.opacity = '1';
+            targetPanel.style.transform = 'translateX(0)';
+          }, 50);
+        }, 100);
+      }
+    }
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (!this.classList.contains('active')) {
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          const targetId = this.getAttribute('data-target');
+          switchTab(targetId);
+        }
+      });
+    });
+  }
+
+  // =================================================================
+  // INIT AFTER DOM LOADED
+  // =================================================================
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM fully loaded');
+    initializeMobileMenu();
+    initializeTabs();
+  });
+</script>
+</body>
+</html>
