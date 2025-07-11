@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../public/css/dist/output.css" rel="stylesheet">
+  <link href="/css/dist/output.css" rel="stylesheet">
 
   <title>The International Technical Exhibition of Medical Imaging</title>
 </head>
@@ -18,19 +18,19 @@
 </script>
 <body>
 
-<header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat" style="background-image: url('../public/img/client-head2.png');">
+<header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat" style="background-image: url('/img/client-head2.png');">
   <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
 
     <div id="company-identity" class="col-2">
-      <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-        <img src="../public/img/psp-logo.png" alt="PSP Logo">
+      <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+        <img src="/img/psp-logo.png" alt="PSP Logo">
         <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
       </a>
     </div>
 
     <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
       <li id="home" class="h-full">
-        <a href="index.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
+        <a href="index.erb" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
       </li>
       <li id="product" class="h-full">
         <a href="product_main.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Product</a>
@@ -39,7 +39,7 @@
         <a href="news-main.html" class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Our Business News</a>
       </li>
       <li id="contact" class="h-full">
-        <a href="index.html#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
+        <a href="index.erb#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
       </li>
     </ul>
     <!-- Mobile menu - full-screen, positioned outside the viewport initially -->
@@ -47,8 +47,8 @@
       <!-- Top navigation bar with close button exactly aligned with the menu button -->
       <div class="rack justify-between h-16 border-b border-gray-100">
         <div class="col-2">
-          <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-            <img src="../public/img/psp-logo.png" alt="PSP Logo">
+          <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+            <img src="/img/psp-logo.png" alt="PSP Logo">
           </a>
         </div>
         <!--                    jane try-->
@@ -67,7 +67,7 @@
         <div class="col-10 offset-1">
           <ul class="flex flex-col w-full text-lg">
             <li class="border-b py-4">
-              <a href="index.html" class="block hover:bg-gray-50 py-2">Home</a>
+              <a href="index.erb" class="block hover:bg-gray-50 py-2">Home</a>
             </li>
             <li class="border-b py-4">
               <a href="product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
@@ -105,7 +105,7 @@
       <a href="#contact-us" class="btn-primary hidden lg:flex text-nowrap">Contact Sales</a>
       <!--                jane try-->
       <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer" aria-label="Open menu" type="button">
-        <img src="../public/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+        <img src="/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
       </button>
     </div>
   </nav>
@@ -133,7 +133,7 @@
       PSP Corporate - Japan >>> This year, more than 18,000 people took part in ITEM 2024. This included just over 2,300 doctors and 8,000 technicians, with momentum approaching the pre-Corona 2019 figure of 22,000.
     </p>
 
-    <img src="../public/img/news/20240412item.jpg" alt="(ITEM)2024" class="w-full rounded-lg shadow-md">
+    <img src="/img/news/20240412item.jpg" alt="(ITEM)2024" class="w-full rounded-lg shadow-md">
 
     <p>
       This year's PSP booth will feature the ”NOBORI Viewer ”(formerly EVInsiteR), a cloud-based DICOM viewer software for radiology and other medical professionals, as well as the ”NOBORI RIS” radiology information system, the ”NOBORI PAL AI”, multiple image AI software with diagnosis support functions, the cloud-based dose management system “MINCADI”, the remote image diagnosis infrastructure “ICHIGO” and the medical information sharing application “NOBORI PHR” were introduced.
@@ -143,14 +143,14 @@
       As for the voice of customers from existing users, 1. the case study of the TMG Group on the realization of inter-facility collaboration and remote diagnosis/reading with guaranteed security inside and outside the group using cloud PACS, and 2. the case study of the Shinshu University Hospital on improving operational efficiency through the introduction of AI to support chest CT, head MRI and chest X-ray diagnosis were highly appreciated by many visitors. response.
     </p>
 
-    <img src="../public/img/news/20240412item01.jpg" alt="item01" class="w-full rounded-lg shadow-md">
+    <img src="/img/news/20240412item01.jpg" alt="item01" class="w-full rounded-lg shadow-md">
     <p>As a new initiative using our technology at this time, we introduced the Pathology Cloud Solution. In addition to the image data management previously provided by PSP, this solution also manages Whole Slide Imaging (WSI)/Digital Pathology Image data, which digitizes glass slide specimens, thereby improving data storage in the pathology department and contributing to workflow improvement through DX, such as increased work efficiency and promotion of telepathology. The system contributes to workflow improvements through DX, such as improved data storage in pathology departments, increased work efficiency, and the promotion of telepathology. This product is scheduled to be released in due course.
     </p>
-    <img src="../public/img/news/20240412item02.jpg" alt="item02" class="w-full rounded-lg shadow-md">
+    <img src="/img/news/20240412item02.jpg" alt="item02" class="w-full rounded-lg shadow-md">
     <p>
       Feedback on the products exhibited this time will be reflected in future product development and various services, including sales and marketing. All employees will continue to work together to provide products and services that improve the activities of medical institutions.
     </p>
-    <img src="../public/img/news/20240412item03.jpg" alt="item03" class="w-full rounded-lg shadow-md">
+    <img src="/img/news/20240412item03.jpg" alt="item03" class="w-full rounded-lg shadow-md">
 
 
     <p>
@@ -235,15 +235,15 @@
 
 <footer class="rack py-20 mt-20">
   <div id="company-identity" class="col-2 offset-4">
-    <a href="index.html">
-      <img src="../public/img/psp-logo.png" alt="company logo" id="psp-logo">
+    <a href="index.erb">
+      <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
       <p class="b1">Medical data for everyone. <br>And for the future.</p>
     </a>
   </div>
   <ul id="footer-link" class="col-6 text-right">
   <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
     <!--        <li><a href="./news-main.html">Our Business News</a></li>-->
-    <!--        <li><a href="./index.html#contact-us">Contact</a></li>-->
+    <!--        <li><a href="./index.erb#contact-us">Contact</a></li>-->
     <!--        <li><a href="#">Support</a></li>-->
   </ul>
 

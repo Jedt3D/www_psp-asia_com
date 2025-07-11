@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Main Page</title>
-    <link href="../public/css/dist/output.css" rel="stylesheet">
+    <link href="/css/dist/output.css" rel="stylesheet">
 
 </head>
 <!-- Google tag (gtag.js) -->
@@ -22,19 +22,19 @@
 </script>
 <body>
 <header class="h-screen flex flex-col bg-cover bg-center bg-no-repeat"
-        style="background-image: url('../public/img/pexels-oles-kanebckuu-34911-127873.png');">
+        style="background-image: url('/img/pexels-oles-kanebckuu-34911-127873.png');">
     <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
 
         <div id="company-identity" class="col-2">
-            <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                <img src="../public/img/psp-logo.png" alt="PSP Logo">
+            <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                <img src="/img/psp-logo.png" alt="PSP Logo">
                 <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
             </a>
         </div>
 
         <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
             <li id="home" class="h-full">
-                <a href="index.html"
+                <a href="index.erb"
                    class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
             </li>
             <li id="product" class="h-full">
@@ -47,7 +47,7 @@
                     Business News</a>
             </li>
             <li id="contact" class="h-full">
-                <a href="index.html#contact-us"
+                <a href="index.erb#contact-us"
                    class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
             </li>
         </ul>
@@ -58,8 +58,8 @@
             <!-- Top navigation bar with close button exactly aligned with the menu button -->
             <div class="rack justify-between h-16 border-b border-gray-100">
                 <div class="col-2">
-                    <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                        <img src="../public/img/psp-logo.png" alt="PSP Logo">
+                    <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                        <img src="/img/psp-logo.png" alt="PSP Logo">
                     </a>
                 </div>
                 <!--                    jane try-->
@@ -79,7 +79,7 @@
                 <div class="col-10 offset-1">
                     <ul class="flex flex-col w-full text-lg">
                         <li class="border-b py-4">
-                            <a href="index.html" class="block hover:bg-gray-50 py-2">Home</a>
+                            <a href="index.erb" class="block hover:bg-gray-50 py-2">Home</a>
                         </li>
                         <li class="border-b py-4">
                             <a href="./product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
@@ -118,7 +118,7 @@
             <!--                jane try-->
             <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer"
                     aria-label="Open menu" type="button">
-                <img src="../public/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+                <img src="/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
             </button>
         </div>
     </nav>
@@ -140,25 +140,25 @@
         <p class="s1 col-7 offset-5">Secured-environment in the cloud. we don't have any issue for decades.</p>
     </div>
 
-    <img src="../public/img/cloud-diagram.png" alt="" class="col-10 offset-2">
+    <img src="/img/cloud-diagram.png" alt="" class="col-10 offset-2">
 
     <div id="features" class="rack py-12">
         <div id="feature-1" class="col-3 offset-3 feature-card text-center">
-            <img src="../public/img/network-wired.svg" alt="icon" class="mx-auto h-16 w-16">
+            <img src="/img/network-wired.svg" alt="icon" class="mx-auto h-16 w-16">
             <h3>Experienced Business Approach</h3>
             <p>With over a decade of experience in healthcare imaging solutions, we understand the unique challenges
                 faced by healthcare providers. Our solutions are built on proven methodologies and industry best
                 practices, ensuring reliable and efficient implementation for organizations of all sizes.</p>
         </div>
         <div id="feature-2" class="col-3 feature-card text-center">
-            <img src="../public/img/pencil.svg" alt="icon" class="mx-auto h-16 w-16">
+            <img src="/img/pencil.svg" alt="icon" class="mx-auto h-16 w-16">
             <h3>Customer-Centric Solutions</h3>
             <p>We work closely with healthcare providers to develop tailored solutions that match their specific needs.
                 From customizable DICOM viewers to flexible networking options, our products adapt to your workflow
                 while maintaining the highest standards of security and performance.</p>
         </div>
         <div id="feature-3" class="col-3 feature-card text-center">
-            <img src="../public/img/users-cog.svg" alt="icon" class="mx-auto h-16 w-16">
+            <img src="/img/users-cog.svg" alt="icon" class="mx-auto h-16 w-16">
             <h3>On-site Support</h3>
             <p>Our dedicated support team provides comprehensive on-site assistance, from initial setup to ongoing
                 maintenance. With offices in Tokyo and Bangkok, we ensure rapid response times and personalized support
@@ -172,7 +172,7 @@
             <p>Yearly Software major<br>release updates</p>
         </div>
         <div id="sla-support" class="col-3 flex flex-row items-center justify-center gap-2 text-gray-900">
-            <img src="../public/img/clock.svg" alt="icon" class="size-20">
+            <img src="/img/clock.svg" alt="icon" class="size-20">
             <p>SLA Support available<br>in 24 hr.</p>
         </div>
         <div id="server-uptime" class="col-3 flex flex-row items-center justify-center gap-2 text-gray-900">
@@ -186,14 +186,14 @@
 <section id="product-list" class="bg-gray-100 pt-6">
     <div id="tabs" class="rack justify-center space-x-2 relative z-8 pt-6">
         <button class="tab-button col-3 active rounded-t-lg px-8 py-4 pt-6 flex flex-row items-center gap-2"
-                data-target="cloud-cube-section"><img src="../public/img/cloud-cube.svg" alt="icon" class="w-16">Cloud & The
+                data-target="cloud-cube-section"><img src="/img/cloud-cube.svg" alt="icon" class="w-16">Cloud & The
             Cube
         </button>
         <button class="tab-button col-3 rounded-t-lg px-8 py-4 pt-6 flex flex-row items-center gap-2"
-                data-target="core-system-section"><img src="../public/img/core-system.svg" alt="icon" class="w-16">Core System
+                data-target="core-system-section"><img src="/img/core-system.svg" alt="icon" class="w-16">Core System
         </button>
         <button class="tab-button col-3 rounded-t-lg px-8 py-4 pt-6 flex flex-row items-center gap-2"
-                data-target="addon-modules-section"><img src="../public/img/addon-modules.svg" alt="icon" class="w-16">Add-on
+                data-target="addon-modules-section"><img src="/img/addon-modules.svg" alt="icon" class="w-16">Add-on
             Modules
         </button>
     </div>
@@ -203,9 +203,9 @@
         <div id="cloud-cube-section" class="active-panel">
             <div class="rack">
                 <div class="image col-3 offset-1 flex flex-col justify-start items-center h-full">
-                    <img src="../public/img/graphic-cloud.svg" alt="">
-                    <img src="../public/img/graphic-nobori.svg" alt="">
-                    <img src="../public/img/graphic-cubefarm.svg" alt="">
+                    <img src="/img/graphic-cloud.svg" alt="">
+                    <img src="/img/graphic-nobori.svg" alt="">
+                    <img src="/img/graphic-cubefarm.svg" alt="">
                 </div>
 
                 <div id="cloud-cube-content" class="col-8 flex flex-col gap-6">
@@ -216,14 +216,14 @@
 
                     <div class="rack">
                         <div class="feature-card col-6">
-                            <img src="../public/img/the-cube.svg" alt="icon" class="h-32">
+                            <img src="/img/the-cube.svg" alt="icon" class="h-32">
                             <h4>The CUBE</h4>
                             <p>Compact appliance available on a rental basis that enables medical institutions of any
                                 size to assemble PACS of desired scale. SSD storage ensures high fault-tolerance.</p>
                         </div>
 
                         <div class="feature-card col-6">
-                            <img src="../public/img/cube-smartretrieve.svg" alt="icon" class="h-32">
+                            <img src="/img/cube-smartretrieve.svg" alt="icon" class="h-32">
                             <h4>Smart-retrieve</h4>
                             <p>Ensures high speed image access while minimizing disk usage. Prefetches data from centers
                                 in advance based on EHR and ordering system data.</p>
@@ -232,14 +232,14 @@
 
                     <div class="rack">
                         <div class="feature-card col-6">
-                            <img src="../public/img/cube-security.svg" alt="icon" class="h-32">
+                            <img src="/img/cube-security.svg" alt="icon" class="h-32">
                             <h4>Security, Safety, Compliance</h4>
                             <p>Data storage compliant with Ministry guidelines. Geographically distributed across
                                 multiple encrypted data centers with redundancy mechanisms.</p>
                         </div>
 
                         <div class="feature-card col-6">
-                            <img src="../public/img/cube-zeroinvestment.svg" alt="icon" class="h-32">
+                            <img src="/img/cube-zeroinvestment.svg" alt="icon" class="h-32">
                             <h4>Zero-investment</h4>
                             <p>Cost-effective rental model with no need to purchase, renew or replace servers. Scalable
                                 monthly contracts adapt to storage needs.</p>
@@ -248,14 +248,14 @@
 
                     <div class="rack">
                         <div class="feature-card col-6">
-                            <img src="../public/img/cube-maintainability.svg" alt="" class="h-32">
+                            <img src="/img/cube-maintainability.svg" alt="" class="h-32">
                             <h4>Maintainability</h4>
                             <p>Centralized cloud-based approach to upgrades, configuration, and monitoring. Failure
                                 detection ensures smooth system operation.</p>
                         </div>
 
                         <div class="feature-card col-6">
-                            <img src="../public/img/cube-collection.svg" alt="" class="h-32">
+                            <img src="/img/cube-collection.svg" alt="" class="h-32">
                             <h4>Collection & Sharing</h4>
                             <p>Makes images and reports available online for efficient sharing between institutions,
                                 mobile access and teleradiology services.</p>
@@ -279,19 +279,19 @@
                     <!-- Column 1: DICOM Connection -->
                     <div class="col-4 flex flex-col gap-6">
                         <div class="tool-group mb-8 text-center">
-                            <img src="../public/img/group-dicomconnection.svg" alt="" class="mx-auto mb-4">
+                            <img src="/img/group-dicomconnection.svg" alt="" class="mx-auto mb-4">
                             <h3>DICOM Connection</h3>
                         </div>
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
-                            <img src="../public/img/core-storage.svg" alt="" class="mx-auto h-32">
+                            <img src="/img/core-storage.svg" alt="" class="mx-auto h-32">
                             <h4>Relay Server</h4>
                             <p>Secure and reliable storage for medical images with automatic backup and redundancy
                                 features.</p>
                         </div>
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
-                            <img src="../public/img/core-worklistintegration.svg" alt="" class="mx-auto h-32">
+                            <img src="/img/core-worklistintegration.svg" alt="" class="mx-auto h-32">
                             <h4>Worklist Integration</h4>
                             <p>Our worklist integration system creates a seamless workflow between your Hospital
                                 Information System (HIS), central database, and medical imaging equipment
@@ -302,12 +302,12 @@
                     <!-- Column 2: DICOM Viewer -->
                     <div class="col-4 flex flex-col gap-6">
                         <div class="tool-group mb-8 text-center">
-                            <img src="../public/img/group-dicomviewer.svg" alt="" class="mx-auto mb-4">
+                            <img src="/img/group-dicomviewer.svg" alt="" class="mx-auto mb-4">
                             <h3>DICOM Viewer</h3>
                         </div>
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
-                            <img src="../public/img/core-viewer.png" alt="" class="mx-auto h-32">
+                            <img src="/img/core-viewer.png" alt="" class="mx-auto h-32">
                             <h4>Standard & Standalone Viewer</h4>
                             <p>The main DICOM Viewer, fully equipped with diagnosis functions for radiologists.</p>
                             <ul class="text-left">
@@ -320,7 +320,7 @@
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
                             <div class="text-center mb-4">
-                                <img src="../public/img/core-basedviewer.png" alt="Web-based Viewer icon" class="mx-auto h-32">
+                                <img src="/img/core-basedviewer.png" alt="Web-based Viewer icon" class="mx-auto h-32">
                             </div>
                             <h4>Web-based Viewer</h4>
                             <p>Zero-footprint web viewer for instant access to medical images from any device with
@@ -331,13 +331,13 @@
                     <!-- Column 3: Technician Tools -->
                     <div class="col-4 flex flex-col gap-6">
                         <div class="tool-group mb-8 text-center">
-                            <img src="../public/img/group-techniciantools.svg" alt="Technician Tools icon" class="mx-auto mb-4">
+                            <img src="/img/group-techniciantools.svg" alt="Technician Tools icon" class="mx-auto mb-4">
                             <h3>Administrator Tools</h3>
                         </div>
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
                             <div class="text-center mb-4">
-                                <img src="../public/img/core-dicomimporter.png" alt="DICOM Importer icon" class="mx-auto h-32">
+                                <img src="/img/core-dicomimporter.png" alt="DICOM Importer icon" class="mx-auto h-32">
                             </div>
                             <h4>Importer</h4>
                             <p>Tool to import DICOM images (from CD/DVD, hard disks) or non-DICOM data (images such as
@@ -346,7 +346,7 @@
 
                         <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow flex flex-col gap-4 text-center">
                             <div class="text-center mb-4">
-                                <img src="../public/img/core-mobileviewer.png" alt="Mobile Viewer icon" class="mx-auto h-32">
+                                <img src="/img/core-mobileviewer.png" alt="Mobile Viewer icon" class="mx-auto h-32">
                             </div>
                             <h4>Mobile Viewer</h4>
                             <p>Mobile-optimized viewer for on-the-go access to medical images with touch-friendly
@@ -372,7 +372,7 @@
                 <div class="rack justify-center">
                     <div class="col-3 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="card-image bg-gray-50 p-8 text-center">
-                            <img src="../public/img/addon-viewermammogram.png" alt="Mammograms viewer icon"
+                            <img src="/img/addon-viewermammogram.png" alt="Mammograms viewer icon"
                                  class="mx-auto h-32">
                         </div>
                         <div class="card-content p-6">
@@ -384,7 +384,7 @@
 
                     <div class="col-3 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="card-image bg-gray-50 p-8 text-center">
-                            <img src="../public/img/addon-reportingsystem.png" alt="Reporting System icon" class="mx-auto h-32">
+                            <img src="/img/addon-reportingsystem.png" alt="Reporting System icon" class="mx-auto h-32">
                         </div>
                         <div class="card-content p-6">
                             <h4>Reporting System</h4>
@@ -395,7 +395,7 @@
 
                     <div class="col-3 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="card-image bg-gray-50 p-8 text-center">
-                            <img src="../public/img/addon-ris.png" alt="RIS icon" class="mx-auto h-32">
+                            <img src="/img/addon-ris.png" alt="RIS icon" class="mx-auto h-32">
                         </div>
                         <div class="card-content p-6">
                             <h4>RIS</h4>
@@ -406,7 +406,7 @@
 
                     <div class="col-3 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="card-image bg-gray-50 p-8 text-center">
-                            <img src="../public/img/addon-teachingfilesystem.png" alt="Teaching File System icon"
+                            <img src="/img/addon-teachingfilesystem.png" alt="Teaching File System icon"
                                  class="mx-auto h-32">
                         </div>
                         <div class="card-content p-6">
@@ -418,7 +418,7 @@
 
                     <div class="col-3 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="card-image bg-gray-50 p-8 text-center">
-                            <img src="../public/img/addon-dicomtageditor.png" alt="Teaching File System icon"
+                            <img src="/img/addon-dicomtageditor.png" alt="Teaching File System icon"
                                  class="mx-auto h-32">
                         </div>
                         <div class="card-content p-6">
@@ -458,7 +458,7 @@
             <!-- Support Feature 1 -->
             <div class="col-3 bg-white rounded-lg shadow-md p-6 text-center">
                 <div class="flex justify-center mb-6">
-                    <img src="../public/img/support-direct.svg" alt="Direct Expert Communication icon">
+                    <img src="/img/support-direct.svg" alt="Direct Expert Communication icon">
                 </div>
                 <h4>Direct, Expert Communication</h4>
                 <p>
@@ -470,7 +470,7 @@
             <!-- Support Feature 2 -->
             <div class="col-3 bg-white rounded-lg shadow-md p-6 text-center">
                 <div class="flex justify-center mb-6">
-                    <img src="../public/img/support-holistic.svg" alt="Holistic Problem-Solving icon">
+                    <img src="/img/support-holistic.svg" alt="Holistic Problem-Solving icon">
                 </div>
                 <h4>Holistic Problem-Solving</h4>
                 <p>
@@ -482,7 +482,7 @@
             <!-- Support Feature 3 -->
             <div class="col-3 bg-white rounded-lg shadow-md p-6 text-center">
                 <div class="flex justify-center mb-6">
-                    <img src="../public/img/support-rapid.svg" alt="Rapid Response & Clear SLAs icon">
+                    <img src="/img/support-rapid.svg" alt="Rapid Response & Clear SLAs icon">
                 </div>
                 <h4>Rapid Response & Clear SLAs</h4>
                 <p>
@@ -494,7 +494,7 @@
             <!-- Support Feature 4 -->
             <div class="col-3 bg-white rounded-lg shadow-md p-6 text-center">
                 <div class="flex justify-center mb-6">
-                    <img src="../public/img/support-continuous.svg" alt="Continuous Improvement & Collaboration icon">
+                    <img src="/img/support-continuous.svg" alt="Continuous Improvement & Collaboration icon">
                 </div>
                 <h4>Continuous Improvement & Collaboration</h4>
                 <p>
@@ -578,15 +578,15 @@
 
 <footer class="rack py-20">
     <div id="company-identity" class="col-2 offset-3">
-        <a href="index.html">
-            <img src="../public/img/psp-logo.png" alt="company logo" id="psp-logo">
+        <a href="index.erb">
+            <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
             <p class="b1">Medical data for everyone. <br>And for the future.</p>
         </a>
     </div>
     <ul id="footer-link" class="col-7 text-right">
       <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
         <!--    <li><a href="./news-main.html">Our Business News</a></li>-->
-        <!--    <li><a href="./index.html#contact-us">Contact</a></li>-->
+        <!--    <li><a href="./index.erb#contact-us">Contact</a></li>-->
         <!--    <li><a href="#">Support</a></li>-->
     </ul>
 
@@ -776,6 +776,6 @@
     });
 </script>
 
-<script src="../public/js/highlight-animation.js"></script>
+<script src="/js/highlight-animation.js"></script>
 </body>
 </html>

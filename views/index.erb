@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../public/css/dist/output.css" rel="stylesheet">
+    <link href="/css/dist/output.css" rel="stylesheet">
 
     <title>Main Page</title>
     <style>
@@ -61,12 +61,12 @@
 
 <body>
 <header class="h-screen flex flex-col bg-cover bg-center bg-no-repeat"
-        style="background-image: url('../public/img/bg-head-index.png');">
+        style="background-image: url('/img/bg-head-index.png');">
     <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
 
         <div id="company-identity" class="col-2">
-            <a href="./index.html" class="flex flex-row items-center gap-4 h-full">
-                <img src="../public/img/psp-logo.png" alt="PSP Logo">
+            <a href="./index.erb" class="flex flex-row items-center gap-4 h-full">
+                <img src="/img/psp-logo.png" alt="PSP Logo">
                 <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
             </a>
         </div>
@@ -74,7 +74,7 @@
         <!-- Desktop menu -->
         <ul class="col-8 justify-center text-nowrap hidden lg:flex h-full">
             <li id="home" class="h-full">
-                <a href="./index.html"
+                <a href="./index.erb"
                    class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
             </li>
             <a href="product_main.html"
@@ -97,8 +97,8 @@
             <!-- Top navigation bar with close button exactly aligned with the menu button -->
             <div class="rack justify-between h-16 border-b border-gray-100">
                 <div class="col-2">
-                    <a href="./index.html" class="flex flex-row items-center gap-4 h-full">
-                        <img src="../public/img/psp-logo.png" alt="PSP Logo">
+                    <a href="./index.erb" class="flex flex-row items-center gap-4 h-full">
+                        <img src="/img/psp-logo.png" alt="PSP Logo">
                     </a>
                 </div>
                 <!--                    jane try-->
@@ -119,7 +119,7 @@
                 <div class="col-10 offset-1">
                     <ul class="flex flex-col w-full text-lg">
                         <li class="border-b py-4">
-                            <a href="./index.html" class="block hover:bg-gray-50 py-2">Home</a>
+                            <a href="./index.erb" class="block hover:bg-gray-50 py-2">Home</a>
                         </li>
                         <li class="border-b py-4">
                             <a href="product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
@@ -158,7 +158,7 @@
             <!--                jane try-->
             <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer"
                     aria-label="Open menu" type="button">
-                <img src="../public/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+                <img src="/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
             </button>
         </div>
     </nav>
@@ -206,17 +206,17 @@
 
 
     <div class="col-6 offset-6">
-        <img src="../public/img/vision.png" alt="black computer with yellow cpu">
+        <img src="/img/vision.png" alt="black computer with yellow cpu">
     </div>
 </div>
 
 <!--map-->
-<div class="rack py-24 w-full bg-cover bg-center" style="background-image: url('../public/img/bg-map.png');">
+<div class="rack py-24 w-full bg-cover bg-center" style="background-image: url('/img/bg-map.png');">
 
     <!--    1-->
     <div class="col-3 offset-5 bg-white shadow-md rounded-lg flex flex-col self-start overflow-hidden">
 
-        <img src="../public/img/bangkok.png" alt="beautiful bangkok map" class="w-full">
+        <img src="/img/bangkok.png" alt="beautiful bangkok map" class="w-full">
         <div class="py-5 px-4">
             <h3>PSP ASIA CO., LTD.</h3>
             <p>
@@ -260,9 +260,9 @@
 <div class="col-10 offset-2 flex flex-col items-center py-24">
     <h2>Partnership</h2>
     <div class="flex flex-row flex-wrap justify-center items-center w-full gap-16 my-12">
-        <img src="../public/img/bjc.png" alt="bjc logo" class="h-18 w-auto max-w-full object-contain">
-        <img src="../public/img/cmc.png" alt="cmc logo" class="h-18 w-auto max-w-fullobject-contain">
-        <img src="../public/img/lpixel.png" alt="lpix logo" class="h-25 w-auto max-w-full object-contain">
+        <img src="/img/bjc.png" alt="bjc logo" class="h-18 w-auto max-w-full object-contain">
+        <img src="/img/cmc.png" alt="cmc logo" class="h-18 w-auto max-w-fullobject-contain">
+        <img src="/img/lpixel.png" alt="lpix logo" class="h-25 w-auto max-w-full object-contain">
     </div>
 </div>
 
@@ -333,7 +333,7 @@
 
 <footer class="rack py-20">
     <div class="col-2 offset-4">
-        <img src="../public/img/psp-logo.png" alt="company logo" id="psp-logo">
+        <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
         <p class="b1">Medical data for everyone. <br>And for the future.</p>
     </div>
     <ul id="footer-link" class="col-6 text-right">
@@ -354,7 +354,7 @@
     </div>
 </footer>
 
-<script src="../public/js/highlight-animation.js"></script>
+<script src="/js/highlight-animation.js"></script>
 <script>
     // Simple mobile menu implementation
     document.addEventListener('DOMContentLoaded', function () {

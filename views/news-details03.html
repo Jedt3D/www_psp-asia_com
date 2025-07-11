@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../public/css/dist/output.css" rel="stylesheet">
+    <link href="/css/dist/output.css" rel="stylesheet">
 
     <title> Cloud-based PACS and AI.</title>
 </head>
@@ -18,19 +18,19 @@
 </script>
 <body>
 
-<header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat" style="background-image: url('../public/img/client-head2.png');">
+<header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat" style="background-image: url('/img/client-head2.png');">
     <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
 
         <div id="company-identity" class="col-2">
-            <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                <img src="../public/img/psp-logo.png" alt="PSP Logo">
+            <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                <img src="/img/psp-logo.png" alt="PSP Logo">
                 <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
             </a>
         </div>
 
         <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
             <li id="home" class="h-full">
-                <a href="index.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
+                <a href="index.erb" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
             </li>
             <li id="product" class="h-full">
                 <a href="product_main.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Product</a>
@@ -39,7 +39,7 @@
                 <a href="news-main.html" class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Our Business News</a>
             </li>
             <li id="contact" class="h-full">
-                <a href="index.html#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
+                <a href="index.erb#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
             </li>
         </ul>
         <!-- Mobile menu - full-screen, positioned outside the viewport initially -->
@@ -47,8 +47,8 @@
             <!-- Top navigation bar with close button exactly aligned with the menu button -->
             <div class="rack justify-between h-16 border-b border-gray-100">
                 <div class="col-2">
-                    <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                        <img src="../public/img/psp-logo.png" alt="PSP Logo">
+                    <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                        <img src="/img/psp-logo.png" alt="PSP Logo">
                     </a>
                 </div>
                 <!--                    jane try-->
@@ -67,7 +67,7 @@
                 <div class="col-10 offset-1">
                     <ul class="flex flex-col w-full text-lg">
                         <li class="border-b py-4">
-                            <a href="index.html" class="block hover:bg-gray-50 py-2">Home</a>
+                            <a href="index.erb" class="block hover:bg-gray-50 py-2">Home</a>
                         </li>
                         <li class="border-b py-4">
                             <a href="product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
@@ -105,7 +105,7 @@
             <a href="#contact-us" class="btn-primary hidden lg:flex text-nowrap">Contact Sales</a>
             <!--                jane try-->
             <button id="menu-toggle" class="hamburger-fixed lg:!hidden focus:outline-none cursor-pointer" aria-label="Open menu" type="button">
-                <img src="../public/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
+                <img src="/img/icon-menu.svg" alt="menu-icon" class="w-6 h-6">
             </button>
         </div>
     </nav>
@@ -134,7 +134,7 @@
 
         </p>
 
-        <img src="../public/img/news/20240426tsrt.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
+        <img src="/img/news/20240426tsrt.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
 
         <p>
 
@@ -146,8 +146,8 @@
 
         <iframe src="https://www.youtube.com/embed/CFjPdGd9nnc" class="w-full h-64 md:h-96 lg:h-[500px]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <img src="../public/img/news/20240426tsrt01.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
-        <img src="../public/img/news/20240426tsrt02.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
+        <img src="/img/news/20240426tsrt01.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
+        <img src="/img/news/20240426tsrt02.jpg" alt="lunch-Symposium" class="w-full rounded-lg shadow-md">
 
         <p>
             If you have any questions or are interested, please contact us: <span class="yellow-highlight">info99@psp-asia.com</span>
@@ -231,15 +231,15 @@
 
 <footer class="rack py-20 mt-20">
     <div id="company-identity" class="col-2 offset-4">
-        <a href="index.html">
-            <img src="../public/img/psp-logo.png" alt="company logo" id="psp-logo">
+        <a href="index.erb">
+            <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
             <p class="b1">Medical data for everyone. <br>And for the future.</p>
         </a>
     </div>
     <ul id="footer-link" class="col-6 text-right">
       <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
         <!--        <li><a href="./news-main.html">Our Business News</a></li>-->
-        <!--        <li><a href="./index.html#contact-us">Contact</a></li>-->
+        <!--        <li><a href="./index.erb#contact-us">Contact</a></li>-->
         <!--        <li><a href="#">Support</a></li>-->
     </ul>
 

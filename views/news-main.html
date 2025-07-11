@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../public/css/dist/output.css" rel="stylesheet">
+    <link href="/css/dist/output.css" rel="stylesheet">
 
     <title>News Main Page</title>
 
@@ -23,19 +23,19 @@
 </script>
 <body>
 <header class="h-[40vh] flex flex-col bg-cover bg-bottom bg-no-repeat"
-        style="background-image: url('../public/img/client-head2.png');">
+        style="background-image: url('/img/client-head2.png');">
     <nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
 
         <div id="company-identity" class="col-2">
-            <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                <img src="../public/img/psp-logo.png" alt="PSP Logo">
+            <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                <img src="/img/psp-logo.png" alt="PSP Logo">
                 <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
             </a>
         </div>
 
         <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
             <li id="home" class="h-full">
-                <a href="index.html"
+                <a href="index.erb"
                    class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
             </li>
             <li id="product" class="h-full">
@@ -48,7 +48,7 @@
                     Business News</a>
             </li>
             <li id="contact" class="h-full">
-                <a href="index.html#contact-us"
+                <a href="index.erb#contact-us"
                    class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
             </li>
         </ul>
@@ -58,8 +58,8 @@
             <!-- Top navigation bar with close button exactly aligned with the menu button -->
             <div class="rack justify-between h-16 border-b border-gray-100">
                 <div class="col-2">
-                    <a href="index.html" class="flex flex-row items-center gap-4 h-full">
-                        <img src="../public/img/psp-logo.png" alt="PSP Logo">
+                    <a href="index.erb" class="flex flex-row items-center gap-4 h-full">
+                        <img src="/img/psp-logo.png" alt="PSP Logo">
                     </a>
                 </div>
                 <!--                    jane try-->
@@ -79,7 +79,7 @@
                 <div class="col-10 offset-1">
                     <ul class="flex flex-col w-full text-lg">
                         <li class="border-b py-4">
-                            <a href="index.html" class="block hover:bg-gray-50 py-2">Home</a>
+                            <a href="index.erb" class="block hover:bg-gray-50 py-2">Home</a>
                         </li>
                         <li class="border-b py-4">
                             <a href="product_main.html" class="block hover:bg-gray-50 py-2">Product</a>
@@ -116,7 +116,7 @@
             <a href="#contact-us" class="btn-primary hidden lg:flex text-nowrap">Contact Sales</a>
             <!--                jane try-->
             <button id="menu-toggle" class="lg:!hidden w-8 h-8" aria-label="Open menu" type="button">
-                <img src="../public/img/icon-menu.svg" alt="menu-icon">
+                <img src="/img/icon-menu.svg" alt="menu-icon">
             </button>
         </div>
     </nav>
@@ -138,7 +138,7 @@
     <!--new14-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details01.html" class="block">
-            <img src="../public/img/news/20250605aacrt.jpg" alt="aacrt poster"
+            <img src="/img/news/20250605aacrt.jpg" alt="aacrt poster"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">Lunch talk #AACRT-TSRT2025</p>
@@ -150,7 +150,7 @@
         <div class="flex justify-between items-center pt-3 px-8 pb-8">
             <span class="text-xs">5 JUNE 2025</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -159,7 +159,7 @@
     <!--new1-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details01.html" class="block">
-            <img src="../public/img/news/20250605aacrt.jpg" alt="aacrt poster"
+            <img src="/img/news/20250605aacrt.jpg" alt="aacrt poster"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">Coming
@@ -172,7 +172,7 @@
         <div class="flex justify-between items-center pt-3 px-8 pb-8">
             <span class="text-xs">5 JUNE 2025</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -180,7 +180,7 @@
     <!--new2-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details02.html" class="block">
-            <img src="../public/img/news/20250320rcrt.png" alt="rcrt-rst poster"
+            <img src="/img/news/20250320rcrt.png" alt="rcrt-rst poster"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">Please come to meet us at the
@@ -194,7 +194,7 @@
         <div class="flex justify-between items-center pt-3 px-8 pb-8">
             <span class="text-xs">20 March 2025</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -203,7 +203,7 @@
     <!--new3-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details03.html" class="block">
-            <img src="../public/img/news/20240426tsrt.jpg" alt="lunch-Symposium"
+            <img src="/img/news/20240426tsrt.jpg" alt="lunch-Symposium"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">PSP ASIA's Symposium in the 32nd
@@ -215,7 +215,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>26 APRIL 2024</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -224,7 +224,7 @@
     <!--new4-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details04.html" class="block">
-            <img src="../public/img/news/20240425tsrt.jpg" alt="TSRT Conference"
+            <img src="/img/news/20240425tsrt.jpg" alt="TSRT Conference"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">"The 32nd TSRT Annual Conference
@@ -239,7 +239,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>25 APRIL 2024</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -249,7 +249,7 @@
     <!--new5-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details05.html" class="block">
-            <img src="../public/img/news/20240412item.jpg" alt="(ITEM)2024"
+            <img src="/img/news/20240412item.jpg" alt="(ITEM)2024"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">The International Technical
@@ -262,7 +262,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>12 APRIL 2024</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -271,7 +271,7 @@
     <!--new6-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details06.html" class="block">
-            <img src="../public/img/news/20230900meg.jpg" alt="Medical training"
+            <img src="/img/news/20230900meg.jpg" alt="Medical training"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">Follow PSP Asia Co., Ltd. In
@@ -284,7 +284,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>01 SEPTEMBER 2023</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -293,7 +293,7 @@
     <!--new7-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details07.html" class="block">
-            <img src="../public/img/news/20230518pspa.png" alt="PSP ASIA"
+            <img src="/img/news/20230518pspa.png" alt="PSP ASIA"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">Announce that TTPSP ASIA CO.,
@@ -305,7 +305,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>18 MAY 2023</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -314,7 +314,7 @@
     <!--new8-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details08.html" class="block">
-            <img src="../public/img/news/20211219isrrt.jpg" alt="isrrt"
+            <img src="/img/news/20211219isrrt.jpg" alt="isrrt"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">
@@ -330,7 +330,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>19 DECEMBER 2021</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -339,7 +339,7 @@
     <!--new9-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details09.html" class="block">
-            <img src="../public/img/news/20211128rsna.jpg" alt="rsna2021"
+            <img src="/img/news/20211128rsna.jpg" alt="rsna2021"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">#RSNA2021 PSP Corporate,
@@ -354,7 +354,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>28 NOVEMBER 2021</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -363,7 +363,7 @@
     <!--new10-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details10.html" class="block">
-            <img src="../public/img/news/20210416item.png" alt="ITEM2021"
+            <img src="/img/news/20210416item.png" alt="ITEM2021"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">ITEM 2021 (International
@@ -379,7 +379,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>16 APRIL 2021</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -388,7 +388,7 @@
     <!--new11-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details11.html" class="block">
-            <img src="../public/img/news/20191007hhexhibition.jpg" alt="HIM/HIS 2019"
+            <img src="/img/news/20191007hhexhibition.jpg" alt="HIM/HIS 2019"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">HIM/HIS Central World Exhibition
@@ -401,7 +401,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>7 OCTOBER 2019</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -410,7 +410,7 @@
     <!--new12-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details12.html" class="block">
-            <img src="../public/img/news/20190522ttpsp.jpg" alt="พิธีก่อตั้งบริษัทฯ"
+            <img src="/img/news/20190522ttpsp.jpg" alt="พิธีก่อตั้งบริษัทฯ"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">พิธีก่อตั้งบริษัทฯ “TTPSP ASIA
@@ -425,7 +425,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>22 MAY 2019</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -434,7 +434,7 @@
     <!--new13-->
     <div class="col-3 bg-[#d9d9d9]/20 news-item hover:shadow-lg transition-shadow rounded-lg overflow-hidden">
         <a href="news-details13.html" class="block">
-            <img src="../public/img/news/2019042427th.jpg" alt="27th TSRT"
+            <img src="/img/news/2019042427th.jpg" alt="27th TSRT"
                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
             <div class="p-8">
                 <p class="news-title font-medium hover:text-blue-700 transition-colors">27th TSRT of Thailand 24–26 Apr
@@ -449,7 +449,7 @@
         <div class="text-xs flex justify-between items-center pt-3 px-8 pb-8">
             <span>27 APRIL 2019</span>
             <button class="share-btn flex items-center gap-2 px-3 py-1.5 text-xs text-black bg-white rounded-full shadow hover:bg-blue-100 hover:text-blue-800 transition">
-                <img src="../public/img/share-nodes-solid.svg" alt="Share">
+                <img src="/img/share-nodes-solid.svg" alt="Share">
                 <span>Share</span>
             </button>
         </div>
@@ -527,15 +527,15 @@
 
 <footer class="rack py-20">
     <div id="company-identity" class="col-2 offset-4">
-        <a href="index.html">
-            <img src="../public/img/psp-logo.png" alt="company logo" id="psp-logo">
+        <a href="index.erb">
+            <img src="/img/psp-logo.png" alt="company logo" id="psp-logo">
             <p class="b1">Medical data for everyone. <br>And for the future.</p>
         </a>
     </div>
     <ul id="footer-link" class="col-6 text-right">
       <!--        <li><a href="#" target="_blank">Old PSP Asia Website</a></li>-->
         <li><a href="./news-main.html">Our Business News</a></li>
-        <li><a href="index.html#contact-us">Contact</a></li>
+        <li><a href="index.erb#contact-us">Contact</a></li>
         <li><a href="#">Support</a></li>
     </ul>
 
@@ -552,7 +552,7 @@
 
 </footer>
 
-<script src="../public/js/highlight-animation.js"></script>
+<script src="/js/highlight-animation.js"></script>
 
 <!-- Share Modal -->
 <div id="shareModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50 hidden">
