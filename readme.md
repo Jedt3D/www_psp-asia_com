@@ -9,7 +9,12 @@
 
 # Change log
 
-- 2025-07-11 นำ html static มาเริ่มต้นใหม่ใน repo นี้ ทดสอบรัน local web server ผ่านแล้ว
+- 2025-07-11
+  - นำ html static มาเริ่มต้นใหม่ใน repo นี้ ทดสอบรัน local web server ผ่านแล้ว
+  - migrate ไปยัง sinatra 4.1 แล้ว
+  - tailwindcss, twlayout plguin ทำงานได้ build/watch ได้
+  - review image, css, js แล้วผ่าน
+  - route หลักของ sinatra สร้างแล้ว
 
 
 # PSPA Website - Rebased Workfiles
