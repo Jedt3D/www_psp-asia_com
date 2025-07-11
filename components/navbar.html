@@ -1,0 +1,47 @@
+<!-- Navbar Component -->
+<nav class="rack justify-between fixed top-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md h-16">
+    
+    <div id="company-identity" class="col-2 flex flex-row items-center h-full gap-4">
+        <img src="./img/psp-logo.png" alt="PSP Logo">
+        <span class="hidden xl:block text-nowrap">PSP ASIA CO.,LTD.</span>
+    </div>
+    
+    <ul class="col-8 flex justify-center text-nowrap hidden lg:flex h-full">
+        <li id="home" class="h-full">
+            <a href="./main-page.html" class="nav-link active flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Home</a>
+        </li>
+        <li id="product" class="h-full">
+            <a href="./product_main.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Product</a>
+        </li>
+        <li id="news" class="h-full">
+            <a href="./news-main.html" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Our Business News</a>
+        </li>
+        <li id="contact" class="h-full">
+            <a href="#contact-us" class="nav-link flex items-center h-full px-8 hover:text-white hover:bg-gray-700/50 transition-colors duration-100">Contact</a>
+        </li>
+    </ul>
+    
+    <div class="col-2 flex items-center justify-end gap-5">
+        <!-- Language selector (commented out as requested)
+        <div class="relative group language-selector h-full">
+            <button class="flex flex-row items-center gap-2">
+                <span>EN</span><img src="./img/chevron-down.svg" alt="arrow-down" class="w-4 h-4">
+            </button>
+            <div class="absolute right-0 w-24 shadow-lg rounded-b-md overflow-hidden z-20">
+                <a href="#" class="language-option block px-4 py-3 text-gray-800">TH</a>
+                <a href="#" class="language-option block px-4 py-3 text-gray-800">JP</a>
+            </div>
+        </div>
+        -->
+        <button class="btn-primary hidden lg:flex text-nowrap">Contact Sales</button>
+        <a href="#" class="block lg:hidden"><img src="./img/icon-menu.svg" alt="arrow-down" class="w-8 h-8"> </a>
+    </div>
+    
+</nav>
+
+<!-- How to include this component:
+1. Copy the code between these comments
+2. Replace relative paths if needed based on your file structure
+3. Make sure the ID for the "contact" section matches where the "Meet us in Bangkok" section is located
+4. Update the "active" class on the nav-link to match the current page
+--> 
